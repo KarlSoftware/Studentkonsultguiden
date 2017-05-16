@@ -92,3 +92,16 @@ $(document).ready(function() {
   init();
 
 });
+
+function toggleSet() {
+    document.getElementById('business1').style.display = 'none';
+    document.getElementById('business2').style.display = 'none';
+}
+function showToggle() {
+    var x = document.getElementById('business1');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}

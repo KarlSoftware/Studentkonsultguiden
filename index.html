@@ -26,7 +26,7 @@
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
   <script type="text/javascript" src="js/custom.js"></script>>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -34,52 +34,93 @@
 
 
 </head>
-<body class="code-snippet">
+<body onload="toggleSet();">
     <div class="container">
-        <div class="container">
-            <nav class="navbar">
+        <!-- Navbar -->
+        <div class="row">
+            <nav class="navbar navbar-fixed-top">
                 <ul class="container">
                     <ul class="navbar-list">
                         <li class="navbar-item">
                             <a class="navbar-link" href="#header">Hem</a>
                         </li>
                         <li class="navbar-item">
-                            <a class="navbar-link" href="#header">Vad är studentkonsulter?</a>
+                            <a class="navbar-link" href="#studentkonsulter">Vad är studentkonsulter?</a>
                         </li>
                         <li class="navbar-item">
-                            <a class="navbar-link" href="#header">Bolag på din ort</a>
+                            <a class="navbar-link" href="#bolag">Bolag på din ort</a>
                         </li>
                         <li class="navbar-item">
-                            <a class="navbar-link" href="#header">Kontakt</a>
+                            <a class="navbar-link" href="#referenser">Referenser</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="#referenser">Konkakt</a>
                         </li>
                     </ul>
                 </ul>
             </nav>
         </div>
-        
+        <!-- Header -->
         <section class="header" id="header">
             <h2 class="title">Sammanställning och jämförelse av studentkonsultbolag</h2>
-            <a class="button button-primary" href="#valueprop">Jag vill veta mer</a>
-            <div class="value-props" id="valueprop">
-                <div class="four columns value-prop"> Test1 </div>
-                <div class="four columns value-prop"> Test2 </div>
-                <div class="four columns value-prop"> Test3 </div>
+            <a class="button button-primary" href="#valueprops">Jag vill veta mer</a>
+            <div class="row" style="margin-top:20%;">
+                <h3>Vad är studenterkonsulter?</h3>
+            </div>
+            <div class="value-props row" id="valueprops">
+                <div class="six columns value-prop"> <h5>För studenter</h5><p>Spicy jalapeno bacon ipsum dolor amet meatball dolore consectetur, jerky flank ham incididunt in bacon dolor ad shank pork. Cupidatat bacon jowl burgdoggen ham kielbasa fatback aute. Aute tongue occaecat aliqua. Meatloaf sint mollit chuck deserunt beef ribs reprehenderit kevin strip steak salami bacon fatback ribeye. Biltong sirloin est salami capicola, chuck lorem swine nostrud mollit ut pig. Commodo dolor meatloaf enim burgdoggen spare ribs duis ham hock ea do tail alcatra.</p> </div>
+                <div class="six columns value-prop"> <h5>För företag</h5><p>Bacon ipsum dolor amet chuck meatloaf pork loin hamburger chicken meatball ham t-bone shankle strip steak shoulder. Tri-tip landjaeger sirloin porchetta, corned beef brisket pork belly andouille flank ham hock pork chop filet mignon. Picanha tongue brisket drumstick burgdoggen prosciutto t-bone, shoulder turducken. T-bone ribeye fatback picanha prosciutto. Meatball jowl corned beef beef rump boudin flank. Turducken ham pastrami tongue pig pork loin strip steak prosciutto tenderloin swine hamburger jowl shank porchetta. Chuck sausage burgdoggen doner filet mignon, shankle tri-tip ham hock rump tenderloin frankfurter.</p> </div>
             </div>
         </section>
         
+        <h5 class="s-title">Bolag på din ort</h5>
+            <div class="city-section" id="city1">
+                <div class="cities" onclick="showToggle();">
+                    <b>Stockholm</b>
+                    <span class="downarrow">&#x25BC;</span>
+                    </div>
+                <div class="company-badge" id="business1" style="background-image:url('images/lifesum.png')">
+                    <div class="companies">
+                    TiroTech
+                    </div>
+                    <div class="universities">
+                    KTH, SSE, SU
+                    </div>
+                    <div class="business-areas">
+                    Alla våra områden
+                    </div>
+                    <div class="score">
+                    Betyg: 4,7/5
+                    </div>
+                </div>
+            </div>
+        
+            <div class="city-section" id="city2">
+                    <div class="cities" onclick="showToggle();">
+                        <b>Göteborg</b>
+                        <span class="downarrow">&#x25BC;</span>
+                        </div>
+                    <div class="company-badge" id="business2">
+                        <div class="companies">
+                        TiroTech
+                        </div>
+                        <div class="universities">
+                        KTH, SSE, SU
+                        </div>
+                        <div class="business-areas">
+                        Alla våra områden
+                        </div>
+                        <div class="score">
+                        Betyg
+                        </div>
+                    </div>
+                </div>
         
     </div>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
-    </div>
-  </div>
+
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
