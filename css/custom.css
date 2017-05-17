@@ -4,7 +4,7 @@
 .navbar-fixed-top {
     padding-right: 0;
     padding-left: 0;
-    max-height: 340px;
+    max-height: 300px;
     position: fixed;
     right: 0;
     left: 0;
@@ -85,76 +85,7 @@
   /* Re-overiding the width 100% declaration to match size of % based container */
   .has-docked-nav .navbar > .container {
     width: 80%; }
-
-  /* Popover */
-  .popover.open {
-    display: block;
-  }
-  .popover {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #fff;
-    border: 1px solid #eee;
-    border-radius: 4px;
-    top: 92%;
-    left: -50%;
-    -webkit-filter: drop-shadow(0 0 6px rgba(0,0,0,.1));
-       -moz-filter: drop-shadow(0 0 6px rgba(0,0,0,.1));
-            filter: drop-shadow(0 0 6px rgba(0,0,0,.1)); }
-  .popover-item:first-child .popover-link:after, 
-  .popover-item:first-child .popover-link:before {
-    bottom: 100%;
-    left: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none; }
-  .popover-item:first-child .popover-link:after {
-    border-color: rgba(255, 255, 255, 0);
-    border-bottom-color: #fff;
-    border-width: 10px;
-    margin-left: -10px; }
-  .popover-item:first-child .popover-link:before {
-    border-color: rgba(238, 238, 238, 0);
-    border-bottom-color: #eee;
-    border-width: 11px;
-    margin-left: -11px; }
-  .popover-list {
-    padding: 0;
-    margin: 0;
-    list-style: none; }
-  .popover-item {
-    padding: 0;
-    margin: 0; }
-  .popover-link {
-    position: relative;
-    color: #222;
-    display: block;
-    padding: 8px 20px;
-    border-bottom: 1px solid #eee;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.0rem;
-    font-weight: 600;
-    text-align: center;
-    letter-spacing: .1rem; }
-  .popover-item:first-child .popover-link {
-    border-radius: 4px 4px 0 0; }
-  .popover-item:last-child .popover-link {
-    border-radius: 0 0 4px 4px;
-    border-bottom-width: 0; }
-  .popover-link:hover {
-    color: #fff;
-    background: #33C3F0; }
-  .popover-link:hover,
-  .popover-item:first-child .popover-link:hover:after {
-    border-bottom-color: #33C3F0; }
 }
-
 
 /*BADGES!!*/
 .city-section {
@@ -162,23 +93,47 @@
     border-width: 1px;
     border-color: grey;
     width: 100%;
-    height: auto;
     padding: 1rem;
     margin-bottom: 1rem;
 }
+.downarrow {
+    position: relative;
+    float: right;
+}
 .company-badge {
-    width: 180px;
+    position: relative;
+    width: 100%;
     height: 180px;
-    font-size: 1,5em;
-    text-align: center;
+    font-size: 1em;
+    text-align: left;
     border-style: solid;
     border-width: 1px;
     border-color: lightgrey;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    margin-bottom: 1em;
 }
-.downarrow {
+.companies {
+    display: inline-block;
+    vertical-align: top;
     position: relative;
-    float: right;
+    left: 180px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.universities, .business-areas {
+    position: relative;
+    left: 180px;
+}
+.universities {
+    font-style: italic;
+}
+.score {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: auto;
+    height: 1.3em;
+    background: rgba(255,255,255,0.7);
+    font-weight: bold;
 }
